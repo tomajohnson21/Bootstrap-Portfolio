@@ -1,0 +1,126 @@
+/* body{
+    background-image: 
+} */
+/* Navbar Elements */
+/* Name */
+.navbar-brand{
+    color:white !important;
+    background-color:#6ed3cf;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top: 12px solid #6ed3cf;
+    border-bottom: 12px solid #6ed3cf;
+    margin: -12px 0;
+}
+.null-padding-x{
+    padding-right: 0!important;
+    padding-left: 0!important;
+}
+.nav-link{
+    color: rgb(167, 167, 167) !important;
+}
+/* Adds padding so that when nav bar collapses, the drop down items line up with my name */
+@media screen and (max-width: 767px){
+.navbar-nav .nav-link {
+    padding-left: 15px;
+    }
+}
+.navbar{
+    border-bottom: 2px solid lightgray;
+}
+
+
+/* Headers for Content */
+h3{
+    color: #6ed3cf;
+    padding-bottom: 15px;
+    border-bottom: 2px solid lightgray;
+}
+/* used to add top margins */
+.top-buffer{
+    margin-top:20px;
+}
+/* used to add bottom margins */
+.bottom-buffer{
+    margin-bottom:20px;
+}
+/* Genertic container for content */
+.content{
+    background-color:white;
+    border: solid 1px lightgray;
+}
+/* About Styling */
+.me{
+    width: 40%;
+    height: auto;
+}
+/* my picture will take up the entire container when screen size is less than 768px */
+@media screen and (max-width: 767px){
+    .me{
+        width: 100%;
+        height: auto;
+        padding-right: 0 !important;
+    }
+}
+
+/* projects styling */
+.proj-img{
+    width: 600px;
+    height: auto;
+}
+.proj-label{
+    background-color:#6ed3cf;
+    padding: 15px 0;
+}
+.carousel-caption{
+    right:0% !important;
+    left:0% !important;
+    bottom:15%;
+}
+/* I still don't quite understand why I need to use inline-flex to get the labels to properly position themselves */
+.project a{
+    display:inline-flex;
+    position: relative;
+}
+.project img{
+    border: 1px solid lightgray;
+}
+
+/* Contact Styling */
+h5{
+    font-weight: 200;
+}
+.contact-bub{
+    width: 100%;
+}
+textarea{
+    height: 250px;
+    resize: none;
+}
+.sub{
+    color: white;
+    background-color: #6ed3cf;
+    padding: 7px 20px;
+    border: none;
+}
+/* Footer Styling */
+/* Used to make a div that will take up 100% of the screen minus the size of the footer so that the footer will be at the bottom, even if the content itself
+isn't large enough to push the header to the bottom*/
+.mn-con{
+    min-height: calc(100vh - 176px);
+}
+footer {
+    clear: both;
+    font-size: 12px;
+    color: #ffffff;
+    color: #cccccc;
+    text-align: center;
+    background: #666666;
+    border-top: 8px solid #6ed3cf;
+    height: 50px;
+}
+.foot{
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+}
