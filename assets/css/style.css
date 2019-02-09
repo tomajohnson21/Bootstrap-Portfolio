@@ -124,3 +124,8 @@ footer {
     margin: 0 auto;
     clear: both;
 }
+
+.personal-link {
+    width: 20px;
+    height: auto;
+}
